@@ -25,14 +25,18 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Hello VireakRoth"),
       ),
-      body: Container(
-        width: 300,
-        height: 200,
-        decoration: BoxDecoration(
-          color: Colors.yellow,
-        ),
-        child: Text("Hello World", style: TextStyle(fontSize: 50, color: Colors.white),),
-        ),
+      body: Center(
+        child: Container(
+          alignment: Alignment.center,
+          width: 300,
+          height: 200,
+          decoration: BoxDecoration(
+            color: Colors.yellow,
+            borderRadius: BorderRadius.circular(30)
+          ),
+          child: Text("Hello World", style: TextStyle(fontSize: 40, color: Colors.white),),
+          ),
+      ),
     );
   }
 }
